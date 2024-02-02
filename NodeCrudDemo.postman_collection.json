@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "000e4e8d-2c38-4c5c-ba27-2aaab20e6e16",
+		"name": "NodeCrudDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "812909"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/api/v1/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Mobile",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Samsung",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "20000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/api/v1/products",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/v1/products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/v1/products",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/v1/variants",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "variant_name",
+							"value": "Samsung A9",
+							"type": "text"
+						},
+						{
+							"key": "variant_sku",
+							"value": "sku_100002",
+							"type": "text"
+						},
+						{
+							"key": "additional_cost",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "stock_count",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "product_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/api/v1/variants",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"variants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/v1/variants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/v1/variants",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"variants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/v1/variants/product-id/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/v1/variants/product-id/3",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"variants",
+						"product-id",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/v1/variants/2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "variant_name",
+							"value": "ABC-BLUE",
+							"type": "text"
+						},
+						{
+							"key": "variant_sku",
+							"value": "sku_10002",
+							"type": "text"
+						},
+						{
+							"key": "additional_cost",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "stock_count",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "product_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/api/v1/variants/2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"variants",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/v1/products/3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Samsung Mobile",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Sumsung smartphone",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "20000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/api/v1/products/3",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/v1/products/search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "type",
+							"value": "variant_name",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "A9",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/api/v1/products/search",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
